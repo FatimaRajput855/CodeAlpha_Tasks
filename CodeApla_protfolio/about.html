@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body{
+    height: 125vh;
+    background: url(images/1.PNG) no-repeat center/cover;
+    padding: 50px 5%;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background: rgba(225 , 225 , 255 , .1);
+    border:rgba(225 , 225 , 255 , .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);  
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: -5s;
+}
+.navbar a:hover ,
+ .navbar a.active{
+    border-color: #fff;
+}
+.about-container {
+            /* max-width: 1100px; */
+            margin: 70px auto;
+            padding: 40px;
+           
+          
+        }
+ .about-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .text {
+            flex: 1;
+        }
+        .text h1 {
+            text-align: center;
+            font-size: 40px;
+            /* margin-left: 10px; */
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        .text h3 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #ffd700;
+        }
+        .text p {
+            margin-left: 10px;
+            line-height: 1.8;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+        /* tablet Screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        height: 170vh;
+    }
+    .container{
+        /* border: 2px solid yellow; */
+        height: 130vh;
+    }
+      .text h1 {
+        /* border: 2px solid green; */
+        margin-top: 80px;
+      }
+}
+/* Mobile screen */
+@media (max-width: 767px) {
+    body{
+        /*border: 2px solid red;*/
+        height: 250vh;
+    }
+    .container{
+
+        /*border: 2px solid red;*/
+        height: 220vh;
+    }
+    .logo{
+        /* border: 2px solid red; */
+        font-size: 10px;
+        width: 80px;
+        margin-left: -8px;
+    }
+    nav{
+        /* border: 2px solid yellow; */
+    }
+    .navbar a{
+        font-size: 9px;
+         /*border: 2px solid red; */
+        padding: -10px;
+        margin-left: 2px;
+    }
+     .text h1 {
+        /* border: 2px solid green; */
+        margin-top: 40px;
+      }
+      .text p {
+        font-size: 15px;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <a href="#" class="logo">Fatima Rajput</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="about-container">
+        <div class="about-section">
+            <div class="text">
+                <h1>About Me</h1>
+                <h3>Frontend Developer | Creative Designer</h3>
+                <p>
+                    I’m Fatima Rajput, a dedicated and enthusiastic frontend developer who loves creating
+                    visually appealing, clean, and responsive web designs. My journey in web development
+                    started with curiosity and quickly turned into passion. I enjoy transforming ideas into
+                    interactive digital experiences using modern tools and technologies.
+                </p>
+                <p>
+                    My focus is on building user-friendly interfaces that are both simple and functional.
+                    I’m continuously learning and exploring new ideas to enhance my skills and build smarter
+                    solutions. Each project helps me grow, and my goal is to develop impactful designs that
+                    leave a positive user impression.
+                </p>
+                <p>
+                    Apart from coding, I enjoy creativity, exploring UI inspiration, and improving my design
+                    thinking skills. This About page reflects my journey, dedication, and vision as a developer.
+                </p>
+            </div>
+
+
+        </div>
+        </div></div></body></html>

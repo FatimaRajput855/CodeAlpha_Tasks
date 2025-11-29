@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body{
+    height: 125vh;
+    background: url(images/1.PNG) no-repeat center/cover;
+    padding: 50px 5%;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background: rgba(225 , 225 , 255 , .1);
+    border:rgba(225 , 225 , 255 , .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);  
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: -5s;
+}
+.navbar a:hover ,
+ .navbar a.active{
+    border-color: #fff;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+}
+.home-detail h1{
+    margin-left: -5px;
+    font-size: 55px;
+    line-height: 1;
+}
+.home-detail h2{
+    font-size: 32px;
+}
+.home-detail p{
+    margin: 10px 0 20px;
+     line-height: 2;
+}
+.home-detail .dawnload-social{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+     transition: -5s;
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+.home-detail .social-icons{
+   
+    margin-left: 20px;
+}
+.home-detail .social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: -5s;
+}
+.home-detail .social-icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+.home-img .img-box{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    overflow: hidden;
+}
+.home-img .img-box img{
+    position: absolute;
+    top:-15px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+}
+/* tablet Screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        height: 100vh;
+    }
+    .home-detail h1{
+        margin-top: 20px;
+        font-size: 52px;
+    }
+    .home-detail h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.home-detail p{
+    width: 400px;
+}
+.btn{
+    width: 190px;
+}
+.home-detail .social-icons{
+    width: 250px;
+}
+.home-img .img-box{
+    margin-top: -60px;
+    margin-left: -90px;
+}
+}
+/* Mobile screen */
+@media (max-width: 767px) {
+    body{
+        height: 190vh;
+    }
+    .container{
+        height: 150vh;
+    }
+    .logo{
+        /* border: 2px solid red; */
+        font-size: 10px;
+        width: 80px;
+        margin-left: -8px;
+    }
+    nav{
+        /* border: 2px solid yellow; */
+    }
+    .navbar a{
+        font-size: 9px;
+         /*border: 2px solid red; */
+        padding: -10px;
+        margin-left: 2px;
+    }
+    .home-detail h1{
+        /*border: 2px solid red;*/
+        margin-top: -40px;
+        font-size: 30px;
+    }
+    .home-detail h2{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .home-detail p{
+              /* border: 2px solid red; */
+            width: 200px;
+    }
+    .btn{
+        width: 200px;
+        margin-left: -7px;
+        padding: 10px;
+    }
+
+    .home-img .img-box{
+              margin-top: -60px;
+              margin-left: -150px;
+}
+.home-detail .social-icons{
+    /* border: 2px solid orange; */
+    margin-left: 10px;
+    padding: 10px;
+}
+
+}
+</style>
+    
+</head>
+<body>
+    <div class="container">
+    <header>
+        <a href="#" class="logo">Fatima Rajput</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-detail">
+            <H1>Fatima Rajput</H1>
+            <h2>Frontend Developer</h2>
+            <p>Hi! I’m Fatima, a passionate and creative web developer who loves turning ideas into interactive digital experiences. I enjoy designing clean, user-friendly websites that combine simplicity and functionality. I’m always eager to learn new technologies and improve my skills to build better and smarter solutions. This portfolio showcases some of my projects and the progress I’ve made on my journey as a developer.</p>
+            <div class="dawnload-social">
+                <a href="#" class="btn">Dawnload CV</a>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <img src="images/3.png">
+            </div>
+        </div>
+    </section>
+    </div>
+
+</body>
+<script >
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // ----------------------------------------------------------------------
+    // 1. Typing Effect for H2 Title (Frontend Developer)
+    // ----------------------------------------------------------------------
+    const textElement = document.querySelector('.home-detail h2');
+    const fullText = "Frontend Developer";
+    let charIndex = 0;
+    
+    // Agar element milta hai to hi typing effect shuru karein
+    if (textElement) {
+        // Shuru mein text ko khali kar dein
+        textElement.textContent = ''; 
+
+        function type() {
+            if (charIndex < fullText.length) {
+                // Har baar ek character add karein
+                textElement.textContent += fullText.charAt(charIndex);
+                charIndex++;
+                // Har character ke beech 100 milliseconds ka delay
+                setTimeout(type, 100); 
+            } else {
+                // Typing khatam hone par, blinking cursor (border-right) ko hata dein.
+                // Agar aap cursor hamesha blinking rakhna chahte hain, toh is line ko comment kar dein.
+                textElement.style.borderRight = 'none'; 
+            }
+        }
+        
+        // Typing animation shuru karein
+        type();
+    }
+    
+    // ----------------------------------------------------------------------
+    // 2. Navigation Link Activation (On Scroll)
+    // *Zaroori: Yeh feature tabhi theek se kaam karega jab aap 'about.html', 
+    // 'skills.html' waghera files ko ek hi index.html mein sections (#about, #skills) 
+    // ki tarah jodenge ya phir har page par yeh script use karenge.*
+    // ----------------------------------------------------------------------
+    
+    function updateActiveLink() {
+        // Sirf Home section ke liye active class set karna.
+        // Jab aap doosre sections (About, Skills) add karenge, toh yeh logic badlega.
+        const navLinks = document.querySelectorAll('.navbar a');
+        
+        // Filhal sirf 'Home' ko active rakhega, kyunki aapke paas abhi sirf 'home' section hai.
+        // Scroll hone par bhi yeh 'home' ko hi active rakhega jab tak aap doosre sections add nahi karte.
+        
+        // Future mein: jab aap scroll karein to yeh line un-comment karein:
+        // const scrollPosition = window.scrollY; 
+        
+        navLinks.forEach(link => {
+             link.classList.remove('active');
+             if (link.getAttribute('href').includes('index.html')) {
+                 link.classList.add('active');
+             }
+        });
+    }
+
+    // Scroll event ko add karein (active link update karne ke liye)
+    window.addEventListener('scroll', updateActiveLink);
+    // Page load hone par ek baar chalaein
+    updateActiveLink(); 
+
+});
+</script>
+</html>
